@@ -1,0 +1,48 @@
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    animation-duration: 0.25s;
+    border-left: 8px solid orange;
+    background-color: #282828;
+    color: white; 
+  }
+  
+  /* Style the main content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  /* Icons */
+  img {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
+/* Media */
+  @media screen and (max-height: 450px) {
+    .sidebar {
+        display: none;
+    }
+}
