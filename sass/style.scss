@@ -1,0 +1,88 @@
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-left: 5px;
+    list-style-type: none;
+  }
+  
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    animation-duration: 0.25s;
+    border-left: 5px solid orange;
+    background-color: #282828;
+    color: white; 
+  }
+
+  /* menu icon */
+
+  .sidebar .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 20px;
+  }
+
+  .sidebar .menu-icon .navicon:before,
+  .sidebar .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .sidebar .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .sidebar .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  /* Icons */
+  img {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
+
+.sidebar p {
+    font-size: 17px;
+    padding: 20px 10px 10px 10px;
+    color: white;
+  }
+  
+/* Media */
+  @media (min-width: 767px) and (max-width: 1024px) {
+    .sidebar {
+        display: none;
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+      .sidebar li a {
+        padding: 20px 30px;
+      }
+      .sidebar .menu-icon {
+        display: none;
+      }  
+    }
