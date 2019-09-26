@@ -156,6 +156,18 @@ td {
   float: right;
 }
 
+form {
+  padding: 30px;
+  text-align: center;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid #e3e3e3;
+  outline: 0;
+  color: grey;
+}
+
 /* Media */
 @media (min-width: 767px) and (max-width: 1204px) {
   .sidebar {
