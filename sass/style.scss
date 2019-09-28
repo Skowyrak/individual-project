@@ -2,6 +2,19 @@ body {
   background-color: #f5f5f2;
 }
 
+main {
+  width: 100%;
+  margin-left: 30px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.container-fluid {
+  display: flex
+}
+
 /* Style the sidebar - fixed full height */
 .sidebar {
   height: 100%;
@@ -83,7 +96,7 @@ img {
 /* Top bar */
 .top-bar {
   width: 100%;
-  margin-left: 220px;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -124,8 +137,8 @@ img {
 /* General */
 
 .general {
-  margin-top: 30px;
-  margin-left: 230px;
+  margin-top: 80px;
+  margin-left: 170px;
   background-color: white;
   border-bottom: 1px #e3e3e3 solid;
     p {
@@ -136,21 +149,19 @@ img {
     }
 }
 
-table {
-  width: 50%;
-  border: 1px solid #e3e3e3;
-  margin-left: auto; 
-  margin-right: auto;
-    .one {
-      border-right: 1px solid #e3e3e3;
-  }
+.date {
+  text-align: center;
 }
 
-td {
-  padding: 10px;
+button {
+  background-color: orange;
+  padding: 4px 4px;
+  border-radius: 5px;
+  border: none;
 }
-.calendar {
-  float: right;
+
+button:hover {
+  background-color: darkorange;
 }
 
 form {
@@ -158,12 +169,22 @@ form {
   text-align: center;
 }
 
-input {
-  border: 0;
-  border-bottom: 1px solid #e3e3e3;
-  outline: 0;
-  color: grey;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(images/icons/calendar.svg) center/80% no-repeat;
+  color: rgba(0, 0, 0, 0);
+  opacity: 0.5;
 }
+
+/* Text-field */
+.text-field {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+span {
+  padding-left: 130px;
+}
+
 /* Media */
 @media (min-width: 767px) and (max-width: 1204px) {
   .sidebar {
