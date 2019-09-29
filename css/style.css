@@ -8,7 +8,8 @@ main {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 
 .container-fluid {
@@ -138,10 +139,10 @@ img {
 
 /* General */
 .general {
-  margin-top: 80px;
   margin-left: 170px;
   background-color: white;
   border-bottom: 1px #e3e3e3 solid;
+  padding-bottom: 20px;
 }
 
 .general p {
@@ -153,16 +154,18 @@ img {
 
 .date {
   text-align: center;
+  padding: 30px;
+  border-bottom: 1px #e3e3e3 solid;
 }
 
-button {
+button.refresh {
   background-color: orange;
   padding: 4px 4px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
 }
 
-button:hover {
+button.refresh:hover {
   background-color: darkorange;
 }
 
@@ -171,22 +174,70 @@ form {
   text-align: center;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-  background: url(images/icons/calendar.svg) center/80% no-repeat;
-  color: rgba(0, 0, 0, 0);
-  opacity: 0.5;
-}
-
 /* Text-field */
-.text-field {
+.col-sm-10 {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 30px;
 }
 
-span {
-  padding-left: 130px;
+/* Chart */
+img.tabs {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Links */
+button.add {
+  background-color: orange;
+  padding: 6px 10px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  margin: 0 auto;
+  display: block;
+}
+
+button.add:hover {
+  background-color: darkorange;
+  color: white;
+}
+
+.links {
+  margin-top: 20px;
+  margin-left: 170px;
+  background-color: white;
+  border-bottom: 1px #e3e3e3 solid;
+  padding-bottom: 20px;
+}
+
+.links p {
+  padding: 10px;
+  color: grey;
+  font-weight: 300;
+  border-bottom: 1px #e3e3e3 solid;
+}
+
+#links {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+  border-top: 1px #e3e3e3 solid;
+  border-bottom: 1px #e3e3e3 solid;
+}
+
+#links td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+#links tr:hover {
+  background-color: #ddd;
 }
 
 /* Media */
