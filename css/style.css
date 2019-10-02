@@ -28,6 +28,7 @@ section {
   background-color: #111;
   overflow-x: hidden;
   padding: 20px 10px;
+  z-index: 99;
 }
 
 .sidebar ul {
@@ -108,6 +109,7 @@ img {
   border-bottom: 1px #e3e3e3 solid;
   background-color: white;
   padding-right: 0;
+  z-index: 1;
 }
 
 .top-bar .wallet {
@@ -126,6 +128,7 @@ img {
   text-decoration: none;
   display: block;
   padding: 1em;
+  z-index: 1;
 }
 
 .top-bar .notification {
@@ -153,9 +156,30 @@ img {
 }
 
 .date {
-  text-align: center;
-  padding: 30px;
-  border-bottom: 1px #e3e3e3 solid;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.date-rows {
+  width: 500px;
+  padding: 10px 10px;
+  border: 1px solid #e3e3e3;
+  margin: 20px auto;
+  position: relative;
+  width: 422px;
+  height: 48px;
+}
+
+.date-rows::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 1px;
+  left: 180px;
+  background-color: #e3e3e3;
+}
+
+input {
+  border: none;
 }
 
 button.refresh {
@@ -174,13 +198,22 @@ form {
   text-align: center;
 }
 
-/* Text-field */
-.col-sm-10 {
+/* Grid */
+.row-main {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.row-middle {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 30px;
 }
 
 /* Chart */
