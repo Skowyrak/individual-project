@@ -321,7 +321,7 @@ button.add:hover {
     float: right;
   }
   .sidebar li a {
-    padding: 20px 30px;
+    padding: 20px;
   }
   .sidebar ul,
   .sidebar p {
@@ -329,6 +329,15 @@ button.add:hover {
   }
   .sidebar .menu-icon {
     margin: 20px 15px;
+  }
+  .general {
+    margin-left: 30px;
+  }
+  .links {
+    margin-left: 30px;
+  }
+  .avatar {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
