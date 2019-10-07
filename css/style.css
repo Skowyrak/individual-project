@@ -56,7 +56,7 @@ section {
 }
 
 /* menu icon */
-.sidebar .menu-icon .navicon {
+.hamburger {
   background: white;
   display: block;
   height: 2px;
@@ -64,8 +64,8 @@ section {
   width: 20px;
 }
 
-.sidebar .menu-icon .navicon:before,
-.sidebar .menu-icon .navicon:after {
+.hamburger:before,
+.hamburger:after {
   background: white;
   content: "";
   display: block;
@@ -75,11 +75,11 @@ section {
   width: 100%;
 }
 
-.sidebar .menu-icon .navicon:before {
+.hamburger:before {
   top: 5px;
 }
 
-.sidebar .menu-icon .navicon:after {
+.hamburger:after {
   top: -5px;
 }
 
@@ -317,7 +317,7 @@ button.add:hover {
 @media (min-width: 767px) and (max-width: 1204px) {
   .sidebar {
     width: 60px;
-    clear: none;
+    max-width: 200px;
     float: right;
   }
   .sidebar li a {
