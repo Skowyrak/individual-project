@@ -1,0 +1,12 @@
+/* Top bar */
+.top-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: 1px #e3e3e3 solid;
+    background-color: white;
+    padding-right: 0;
+    z-index: 1;
+  }

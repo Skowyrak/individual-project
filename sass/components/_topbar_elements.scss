@@ -1,0 +1,29 @@
+.top-bar .wallet {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+    border-left: 1px #e3e3e3 solid;
+    border-right: 1px #e3e3e3 solid;
+    padding-left: 10px;
+  }
+  
+  .top-bar li {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    z-index: 1;
+  }
+  .top-bar .notification {
+    border-left: 1px #e3e3e3 solid;
+    border-right: 1px #e3e3e3 solid;
+  }
+  
+  .top-bar .person {
+    border-right: 1px #e3e3e3 solid;
+  }
