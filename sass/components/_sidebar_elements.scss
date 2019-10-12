@@ -1,26 +1,4 @@
-.sidebar ul {
-    list-style-type: none;
-    padding: 5px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e3e3e3;
-  }
-  
-  /* Style sidebar links */
-.sidebar a {
-    padding: 6px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
-  }
-  
-  /* Style links on mouse-over */
-.sidebar a:hover {
-    animation-duration: 0.25s;
-    border-left: 8px solid orange;
-    background-color: #282828;
-    color: white;
-  }
+
   
   /* menu icon */
 .hamburger {
@@ -76,12 +54,3 @@ img {
     margin: 5px;
   }
   
-.sidebar p {
-    font-size: 20px;
-    padding: 10px;
-    color: white;
-    display: inline;
-    margin-right: 25px;
-    font-family: $paragraph-font;
-    font-size: $paragraph-font-size;
-  }
